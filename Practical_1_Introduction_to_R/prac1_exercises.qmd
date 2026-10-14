@@ -1,0 +1,64 @@
+---
+title: "Practical 1 - Introduction to R - Exercises"
+author: "Rupert Houghton"
+format: html
+---
+
+```{r}
+#Part 1 - Arguments
+pi <- 3.14159265358979
+round(pi, digits = 1)
+round(pi, digits = 6)
+```
+
+```{r}
+#Part 2 - Ordering Arguments
+print(seq(1,50,1))
+print(seq(from = 5, to = 100, by = 5))
+#You can put the from and to tags in any order
+print(seq(by = 5, to = 100, from = 5))
+```
+```{r}
+#Part 2 - Ordering Arguments
+print(rep(2, 5))
+#You can also put the x and times tags in here, and put them in any order
+print(rep(x = 50, times = 10))
+print(rep(x = 0, times = 10))
+#Exercise:
+print(rep(x = 5, times = 7))
+print(rep(5,7))
+```
+```{r}
+#Part 3 - Variables
+my_variable = 12
+print(my_variable)
+print(4e-3)
+#Types of variables
+numerical_var = 1
+string_var = "String"
+boolean_var = TRUE
+#The operator class() shows the type of each variable
+print(class(boolean_var))
+print(class(numerical_var))
+print(numerical_var)
+print(string_var)
+print(boolean_var)
+```
+```{r}
+#Part 3 - Variables - Using different types of variable
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+n_before_1 <- 5415
+n_before_2 <- 8123
+
+n_after_1 <- 1432
+n_after_2 <- 7543
+
+print(paste(cell_id_1, treated_1, n_before_1, n_after_1))
+```
+
+
