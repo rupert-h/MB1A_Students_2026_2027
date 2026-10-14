@@ -3,6 +3,12 @@ title: "Practical 1 - Introduction to R - Exercises"
 author: "Rupert Houghton"
 format: html
 ---
+```{r}
+#Things for the start/top to load packages from the library
+library(tidyverse)
+library(gt)
+```
+
 
 ```{r}
 #Part 1 - Arguments
@@ -59,6 +65,38 @@ n_after_1 <- 1432
 n_after_2 <- 7543
 
 print(paste(cell_id_1, treated_1, n_before_1, n_after_1))
+```
+```{r}
+#Part 4 - Introduction to Vectors
+my_first_vector <- c(1,5,9)
+print(my_first_vector)
+#Character vectors
+character_vector <- c("This", "is", "a", "character", "vector")
+print(character_vector)
+#Logical vectors
+logical_vector <- c(TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE)
+print(logical_vector)
+```
+```{r}
+#Part 4 - Indexing in vectors practice
+list_of_foods = c("potato", "beans", "fish")
+print(list_of_foods[1])
+#Note that like Python, R code is 1 indexed not 0, so it starts at 1
+```
+```{r}
+#Exercise with indexing
+all_my_pets = c("dog", "horse", "guinea pig", "chicken", "cat")
+fourth_value = all_my_pets[4]
+print(fourth_value)
+```
+```{r}
+#Part 5 - Introduction to Data Frames
+my_data_frame <- data.frame(
+  fruit = c("apple", "pear", "banana"),
+  length = c(22,30,55),
+  weight = c(150,165,170)
+)
+print(my_data_frame)
 ```
 
 
