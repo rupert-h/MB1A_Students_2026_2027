@@ -1,0 +1,21 @@
+---
+title: "Practical_2_Data_Frames_and_Plots/prac2_exercises"
+---
+
+```{r}
+input_vec <- c(5, -10, 4, -3)
+calc_result = input_vec |>
+  mean() |>
+  abs() |>
+  round()
+print(calc_result)
+```
+
+```{r}
+y <- 12
+print(y == 7)
+print(y < 15)
+print(y > 20)
+print(y <= 12)
+```
+
